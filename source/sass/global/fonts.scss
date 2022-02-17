@@ -1,34 +1,34 @@
 @font-face {
-  font-family: "Open Sans Light";
-  src: url("../fonts/open-sans-light.woff2") format("woff2"),
-    url("../fonts/open-sans-light.woff") format("woff");
-  font-weight: 300;
-  font-display: swap;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Open Sans Regular";
-  src: url("../fonts/open-sans-regular.woff2") format("woff2"),
-    url("../fonts/open-sans-regular.woff") format("woff");
+  font-family: "PT Mono Regular";
+  src: url("../fonts/ptmono-regular.woff2") format("woff2"),
+    url("../fonts/ptmono-regular.woff") format("woff");
   font-weight: 400;
   font-display: swap;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Open Sans Semibold";
-  src: url("../fonts/open-sans-semi-bold.woff2") format("woff2"),
-    url("../fonts/open-sans-semi-bold.woff") format("woff");
-  font-weight: 600;
+  font-family: "Roboto Medium";
+  src: url("../fonts/roboto-medium.woff2") format("woff2"),
+    url("../fonts/roboto-medium.woff") format("woff");
+  font-weight: 500;
   font-display: swap;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Open Sans Bold";
-  src: url("../fonts/open-sans-bold.woff2") format("woff2"),
-    url("../fonts/open-sans-bold.woff") format("woff");
+  font-family: "Roboto Condensed Regular";
+  src: url("../fonts/robotocondensed-regular.woff2") format("woff2"),
+    url("../fonts/robotocondensed-regular.woff") format("woff");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto Condensed Bold";
+  src: url("../robotocondensed-bold.woff2") format("woff2"),
+    url("../robotocondensed-bold.woff") format("woff");
   font-weight: 700;
   font-display: swap;
   font-style: normal;

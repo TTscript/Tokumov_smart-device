@@ -9,19 +9,19 @@
   font-family: "Roboto Condensed Bold", "Arial", sans-serif;
   font-size: 25px;
   line-height: 29px;
-  color: $roboto-condensed-bold;
+  color: $roboto-condensed-bold-font-color;
 }
 
 @mixin roboto-condensed-regular() {
   font-family: "Roboto Condensed Regular", "Arial", sans-serif;
   font-size: 22px;
   line-height: 34px;
-  color: $roboto-condensed-regular;
+  color: $roboto-condensed-regular-font-color;
 }
 
 @mixin roboto-medium() {
   font-family: "Roboto Medium", "Arial", sans-serif;
   font-size: 12px;
   line-height: 14px;
-  color: $semibold-font-color;
+  color: $roboto-medium-font-color;
 }
