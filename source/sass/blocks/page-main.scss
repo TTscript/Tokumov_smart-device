@@ -1,0 +1,11 @@
+.page-main {
+  flex: 1;
+  min-width: 100%;
+  margin: -62px 0 0 0;
+  padding: 0;
+
+  @media (max-width: $max-tablet) {
+    margin-top: -53px;
+  }
+}
+

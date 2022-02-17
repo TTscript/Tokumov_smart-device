@@ -1,0 +1,12 @@
+.page-footer {
+  min-width: 100%;
+  margin-bottom: 98px;
+
+  @media (max-width: $max-tablet) {
+    margin-bottom: 53px;
+  }
+
+  @media (max-width: $max-mobile) {
+    margin-bottom: 51px;
+  }
+}

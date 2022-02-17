@@ -1,0 +1,27 @@
+@mixin ptmono-regular() {
+  font-family: "PT Mono Regular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: $ptmono-regular-font-color;
+}
+
+@mixin roboto-condensed-bold () {
+  font-family: "Roboto Condensed Bold", "Arial", sans-serif;
+  font-size: 25px;
+  line-height: 29px;
+  color: $roboto-condensed-bold;
+}
+
+@mixin roboto-condensed-regular() {
+  font-family: "Roboto Condensed Regular", "Arial", sans-serif;
+  font-size: 22px;
+  line-height: 34px;
+  color: $roboto-condensed-regular;
+}
+
+@mixin roboto-medium() {
+  font-family: "Roboto Medium", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  color: $semibold-font-color;
+}
