@@ -1,14 +1,84 @@
+$main-blue-color: rgba(0, 178, 255, 1);
 $ptmono-regular-font-color: rgba(102, 102, 102, 1);
 $roboto-condensed-bold-font-color: rgba(255, 255, 255, 1);
 $roboto-condensed-regular-font-color: rgba(0, 178, 255, 1);
 $roboto-medium-font-color: rgba(196, 196, 196, 1);
-$main-block-background-color: rgba(27,45,55, 1);
+$main-block-background-color: rgba(27, 45, 55, 1);
 $page-header-text-block-color: rgba(255, 255, 255, 1);
 
 
+$circuit-boards-text-color: rgba(255, 255, 255, 1);
+$circuit-boards-line-color: rgba(255, 255, 255, 1);
+$triangle-circle-color: rgba(255, 255, 255, 1);
+
+$features-border-color: rgba(235, 235, 235, 1);
+
+$about-company-title-color: rgba(102, 102, 102, 1);
+
+$goods-background-color: rgba(27, 45, 55, 1);
+$goods-title-color: rgba(255, 255, 255, 1);
+$goods-img-title-color: rgba(255, 255, 255, 1);
+$goods-arrow-color: rgba(255, 255, 255, 1);
+
+$shape-text-color: rgba(255, 255, 255, 1);
+$shape-input-background-color: rgba(255, 255, 255, 0.1);
+$shape-button-border-color: rgba(255, 255, 255, 1);
+$shape-checkbox-border-color: rgba(255, 255, 255, 1);
 
 $page-footer-logo-block-title-color: rgba(32, 60, 66, 1);
 $page-footer-partitions-title-color: rgba(27, 45, 55, 1);
+$page-footer-copyright-border-color: rgba(98, 105, 98, 0.2);
+$accordion-minus-color: rgba(196, 196, 196, 1);
+$partiotions-border-color: rgba(98, 105, 98, 0.2);
+
+$socials-background: rgba(205, 205, 205, 1);
+
+$popup-text-color: rgba(255, 255, 255, 1);
+$popup-close-button: rgba(255, 255, 255, 1);
+
+$header-hover-color: rgba(0, 178, 255, 1);
+$header-active-color: rgba(48, 155, 212, 1);
+$header-icon-hover: rgba(255, 255, 255, 1);
+$header-icon-active: rgba(48, 155, 212, 1);
+
+$circuit-boards-hover: rgba(48, 155, 212, 1);
+$circuit-boards-active: rgba(0, 178, 255, 1);
+
+$features-list-item-hover: rgba(0, 178, 255, 1);
+$features-list-item-active: rgba(48, 155, 212, 1);
+$features-text-color-hover: rgba(255, 255, 255, 1);
+
+$about-company-button-hover: rgba(0, 178, 255, 1);
+$about-company-text-hover: rgba(255, 255, 255, 1);
+$about-company-button-active: rgba(48, 155, 212, 1);
+
+$goods-hover-background: rgba(48, 155, 212, 1);
+$goods-hover-arrow: rgba(255, 255, 255, 1);
+$goods-active-background: rgba(0, 178, 255, 1);
+
+$shape-input-focus-hover: rgba(255, 255, 255, 1);
+$shape-button-hover-color: rgba(255, 255, 255, 1);
+$shape-button-active-color: rgba(0, 178, 255, 1);
+$shape-text-hover: rgba(0, 178, 255, 1);
+$shape-text-active: rgba(255, 255, 255, 1);
+
+$social-fb-hover: rgba(66, 103, 178, 1);
+$social-fb-active: rgba(36, 62, 112, 1);
+$social-classmates-hover: rgba(237, 129, 43, 1);
+$social-classmates-active: rgba(187, 106, 40);
+$social-vk-hover: rgba(76, 117, 163, 1);
+$social-vk-active: rgba(60, 90, 124);
+
+$partitions-item-hover: rgba(0, 178, 255, 1);
+$partitions-item-active: rgba(66, 103, 178, 1);
+
+$address-item-hover: rgba(0, 178, 255, 1);
+$address-item-active: rgba(66, 103, 178, 1);
+
+$privacy-hover: rgba(0, 178, 255, 1);
+$privacy-active: rgb(178, 70, 66);
+
+$shape-error-border-color: rgba(255, 12, 4, 1);
 
 $desktop: 1024px;
 $max-tablet: 1023px;

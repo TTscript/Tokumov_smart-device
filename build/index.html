@@ -20,7 +20,11 @@
     <header class="page-header">
       <div class="page-header__inner">
         <div class="page-header__logo-block">
-          <img src="img/desktop/logo.svg" width="52" height="52" alt="Логотип Smart Device">
+          <a>
+            <svg width="52" height="52" viewBox="0 0 52 52">
+              <use xlink:href="img/svgsprite.svg#logo"></use>
+            </svg>
+          </a>
           <div class="page-header__logo-text-block">
             <h3>Smart Device</h3>
             <p>умные технологии</p>
@@ -29,63 +33,251 @@
         <div class="page-header__contacts">
           <p class="page-header__contacts-mail"><a href="mailto:info@sd.ru">info@sd.ru</a></p>
           <p class="page-header__contacts-phone"><a href="tel:+74950005252">+7 (495) 000 52 52</a></p>
-          <button>Заказать звонок</button>
+          <button aria-label="Кнопка заказать обратный звонок">Заказать звонок</button>
         </div>
       </div>
     </header>
     <main class="page-main">
-      <h1 class="visually-hidden">Smart Device. Умные технологии.</h1>
+      <section class="circuit-boards">
+        <h1 class="visually-hidden">Smart Device. Умные технологии.</h1>
+        <div class="circuit-boards__inner">
+          <div class="circuit-boards__text-block">
+            <h2>Печатные платы</h2>
+            <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
+            <button aria-label="Кнопка получить бесплатную консультацию"><span>Получить бесплатную консультацию</span></button>
+          </div>
+          <div class="circuit-boards__picture-block">
+            <div class="circuit-boards__picture-block-img">
+              <picture>
+                <!-- 1х: 705px; 2x: 1410px -->
+                <source type="image/webp" srcset="img/desktop/circuit-boards.webp 1x, img/desktop/circuit-boards@2x.webp 2x">
+                <img src="img/desktop/circuit-boards.png" srcset="img/desktop/circuit-boards@2x.png 2x" width="705" height="515" alt="Печатные платы">
+              </picture>
+            </div>
+            <div class="triangle-block">
+              <div class="triangle-block__big-triangle">
+                <div class="triangle-block__big-triangle-circles"></div>
+              </div>
+              <div class="triangle-block__small-triangle">
+                <div class="triangle-block__small-triangle-circles"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="features">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <div class="features__inner">
+          <ul class="features__list">
+            <li class="features__list-item features__time-frames">
+              <div class="features__list-item-inner">
+                <h3>Оперативные сроки</h3>
+                <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
+              </div>
+            </li>
+            <li class="features__list-item features__providers">
+              <div class="features__list-item-inner">
+                <h3>Крупные поставщики</h3>
+                <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.
+                </p>
+              </div>
+            </li>
+            <li class="features__list-item features__privacy">
+              <div class="features__list-item-inner">
+                <h3>Полная конфиденциальность</h3>
+                <p>По желанию клиента  мы обеспечиваем полную конфеденциальность.
+                </p>
+              </div>
+            </li>
+            <li class="features__list-item features__price">
+              <div class="features__list-item-inner">
+                <h3>Персонализация стоимости</h3>
+                <p>Мы  подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.      </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="about-company">
+        <div class="about-company__inner">
+          <div class="about-company__text-block-wrapper">
+            <div class="about-company__text-block">
+              <h2>О компании</h2>
+              <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
+              <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог <span>(РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</span></p>
+            </div>
+            <button aria-label="Кнопка подробнее">Подробнее</button>
+          </div>
+        </div>
+      </section>
+      <section class="goods">
+        <div class="goods__inner">
+          <h2>Service Device предлагает следующие товары и услуги</h2>
+          <div class="goods__pictures-block">
+            <a class="bla" href="#ask-question">
+              <div class="goods__picture-wrapper goods__circuit-boards">
+                <h3>Производство печатных плат</h3>
+                <picture>
+                  <!-- 1х: 370px; 2x: 740px -->
+                  <source type="image/webp" srcset="img/desktop/pcb-production.webp 1x, img/desktop/pcb-production@2x.webp 2x">
+                  <img src="img/desktop/pcb-production.png" srcset="img/desktop/pcb-production@2x.png 2x" width="370" height="620" alt="Производство печатных плат">
+                </picture>
+              </div>
+            </a>
+            <a href="#ask-question">
+              <div class="goods__picture-wrapper goods__pcb-mounting">
+                <h3>Монтаж печатных плат</h3>
+                <picture>
+                  <!-- 1х: 370px; 2x: 740px -->
+                  <source type="image/webp" srcset="img/desktop/pcb-mounting.webp 1x, img/desktop/pcb-mounting@2x.webp 2x">
+                  <img src="img/desktop/pcb-mounting.png" srcset="img/desktop/pcb-mounting@2x.png 2x" width="370" height="620" alt="Монтаж печатных плат">
+                </picture>
+              </div>
+            </a>
+            <a href="#ask-question">
+              <div class="goods__picture-wrapper goods__components-for-lighting-technology">
+                <h3>Комплектующие для светотехники</h3>
+                <picture>
+                  <!-- 1х: 370px; 2x: 740px -->
+                  <source type="image/webp" srcset="img/desktop/components-for-lighting-technology.webp 1x, img/desktop/components-for-lighting-technology@2x.webp 2x">
+                  <img src="img/desktop/components-for-lighting-technology.png" srcset="img/desktop/components-for-lighting-technology@2x.png 2x" width="370" height="620" alt="Комплектующие для светотехники">
+                </picture>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="ask-question" id="ask-question">
+        <h2 class="visually-hidden">Форма обратное связи</h2>
+        <div class="ask-question__inner">
+          <div class="triangle-block">
+            <div class="triangle-block__big-triangle">
+              <div class="triangle-block__big-triangle-circles"></div>
+            </div>
+            <div class="triangle-block__small-triangle">
+              <div class="triangle-block__small-triangle-circles"></div>
+            </div>
+          </div>
+          <form class="shape" action="#" method="post">
+            <h3>Остались вопросы? Задайте их нам!</h3>
+            <fieldset class="shape__inner">
+              <legend>Мы проконсультируем Вас бесплатно</legend>
+              <div class="shape__inner-inputs-wrapper">
+                <div class="shape__inner-enter-name">
+                  <label class="visually-hidden" for="name-input">Имя</label>
+                  <input id="name-input" name="name" type="text" placeholder="Имя">
+                </div>
+                <div class="shape__inner-enter-phone">
+                  <label class="visually-hidden" for="tel-input">Телефон</label>
+                  <input id="tel-input" name="phone" type="tel" placeholder="Телефон">
+                </div>
+              </div>
+              <div class="shape__inner-enter-question">
+                <label class="visually-hidden" for="text-input">Поля для вопроса</label>
+                <textarea id="text-input" cols="30" rows="7" placeholder="Ваш вопрос"></textarea>
+              </div>
+              <button type="submit" aria-label="Кнопка отправить форму">Задать вопрос</button>
+              <div class="shape__inner-checkbox">
+                <input class="visually-hidden" id="checkbox" type="checkbox" name="personal-data" checked required>
+                <label for="checkbox">Я согласен на обработку  персональных данных</label>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__inner">
         <div class="page-footer__contacts-wrapper">
           <div class="page-footer__logo-socials-block">
-            <div class="page-footer__logo-block">
-              <img src="img/desktop/logo.svg" width="52" height="52" alt="Логотип Smart Device">
-              <div class="page-footer__logo-text-block">
+            <div class="logo-block">
+              <a>
+                <svg width="52" height="52">
+                  <use xlink:href="img/svgsprite.svg#logo"></use>
+                </svg>
+              </a>
+              <div class="logo-block__text-block">
                 <h3>Smart Device</h3>
                 <p>умные технологии</p>
               </div>
             </div>
-            <div class="page-footer__socials">
-              <p class="page-footer__socials-facebook"></p>
-              <p class="page-footer__socials-classmates"></p>
-              <p class="page-footer__socials-vk"></p>
+            <p>1999-2018 SD Service Devices</p>
+            <div class="socials">
+              <p class="socials-facebook"></p>
+              <p class="socials-classmates"></p>
+              <p class="socials-vk"></p>
             </div>
           </div>
-          <div class="page-footer__site-partitions">
+          <div class="partitions">
             <h3>Разделы сайта</h3>
-            <ul class="page-footer__partitions-list">
-              <li class="page-footer__partitions-list-item">О компании</li>
-              <li class="page-footer__partitions-list-item">Продукты</li>
-              <li class="page-footer__partitions-list-item">Производство печатных плат</li>
-              <li class="page-footer__partitions-list-item">Монтаж печатных плат</li>
-              <li class="page-footer__partitions-list-item">Комплектующие</li>
-              <li class="page-footer__partitions-list-item">Доставка</li>
-              <li class="page-footer__partitions-list-item">Контакты</li>
+            <ul class="partitions__list partitions__list--appear">
+              <li class="partitions__list-item"><a href="#">О компании</a></li>
+              <li class="partitions__list-item"><a href="#">Продукты</a></li>
+              <li class="partitions__list-item"><a href="#">Производство печатных плат</a></li>
+              <li class="partitions__list-item"><a href="#">Монтаж печатных плат</a></li>
+              <li class="partitions__list-item"><a href="#">Комплектующие</a></li>
+              <li class="partitions__list-item"><a href="#">Доставка</a></li>
+              <li class="partitions__list-item"><a href="#">Контакты</a></li>
             </ul>
           </div>
-          <div class="page-footer__address-and-contacts">
+          <div class="address">
             <h3>Наш офис</h3>
-            <p>г. Мытищи, Олимпийский проспект, д.10</p>
-            <p><a href="tel:+74955894050"></a>+7 (495) 589-40-50</p>
-            <p><a href="tel:+79250038767"></a>+7 (925) 003-87-67</p>
-            <p><a href="tel:+792692608079"></a>+7(926) 926-080-79</p>
+            <div class="address__inner address__inner--appear">
+              <p>г. Мытищи, Олимпийский проспект, д.10</p>
+              <p><a href="tel:+74955894050">+7 (495) 589-40-50</a></p>
+              <p><a href="tel:+79250038767">+7 (925) 003-87-67</a></p>
+              <p><a href="tel:+792692608079">+7 (926) 926-080-79</a></p>
+            </div>
           </div>
         </div>
-        <div class="page-footer__copyrights">
-          <div class="page-footer__copyrights-inner">
-            <div class="page-footer__privacy-policy">
+        <div class="copyrights">
+          <div class="copyrights-inner">
+            <div class="copyrights__all-rights-protected">
               <p>Все права защищены</p>
               <p>1999-2018 SD Service Devices</p>
-              <p><a href="#">Условия конфиденциальности</a></p>
             </div>
-            <p><a href="#">Developed by wow studio</a></p>
+            <div class="copyrights__privacy-policy-and-developing">
+              <p><a href="#">Условия конфиденциальности</a></p>
+              <p><a href="#">Developed by wow studio</a></p>
+            </div>
           </div>
         </div>
       </div>
     </footer>
   </div>
+  <template id="popup">
+    <div class="popup">
+      <form class="popup__shape" action="#" method="post">
+        <div class="popup__close-button">
+          <div class="popup__close-button-top-line"></div>
+          <div class="popup__close-button-bottom-line"></div>
+        </div>
+        <h3>Закажите звонок</h3>
+        <fieldset class="popup__shape-inner">
+          <legend>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</legend>
+          <div class="popup__shape-inner-inputs-wrapper">
+            <div class="popup__shape-inner-enter-name">
+              <label class="visually-hidden" for="name-popup-input">Имя</label>
+              <input id="name-popup-input" name="popup-name" type="text" placeholder="Имя">
+            </div>
+            <div class="popup__shape-inner-enter-phone">
+              <label class="visually-hidden" for="tel-popup-input">Телефон</label>
+              <input id="tel-popup-input" name="popup-phone" type="tel" placeholder="Телефон">
+            </div>
+          </div>
+          <div class="popup__shape-inner-enter-question">
+            <label class="visually-hidden" for="popup-textarea">Поле для вопроса</label>
+            <textarea id="popup-textarea" cols="30" rows="7" placeholder="Ваш вопрос"></textarea>
+          </div>
+          <button aria-label="Кнопка отправить форму">Отправить</button>
+          <div class="popup__shape-inner-checkbox">
+            <input class="visually-hidden" id="popup-checkbox" type="checkbox" name="popup" checked>
+            <label for="popup-checkbox">Я согласен на обработку персональных данных</label>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </template>
   <!-- <script src="js/main.js" type="module"></script> -->
 </body>
 </html>

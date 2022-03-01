@@ -1,0 +1,112 @@
+.partitions {
+  margin: 0;
+  padding: 0 0 0 10px;
+
+  @media (max-width: $max-tablet) {
+    padding: 0 0 0 23px;
+    margin: 0;
+  }
+
+  @media (max-width: $max-tablet) and (min-width: $min-tablet) {
+    display: inline-grid;
+  }
+
+  @media (max-width: $max-mobile) {
+    border-top: 1px solid $partiotions-border-color;
+    border-bottom: 1px solid $partiotions-border-color;
+    padding: 0;
+  }
+}
+
+.partitions h3 {
+  @include roboto-condensed-regular();
+  position: relative;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-indent: 5px;
+  text-transform: uppercase;
+  color: $page-footer-partitions-title-color;
+  max-width: 508px;
+  margin: 0 0 25px;
+  padding: 0;
+
+  @media (max-width: $max-mobile) {
+    cursor: pointer;
+    padding: 29px 10px 27px 10px;
+    margin: 0;
+
+    &::before {
+      content: "";
+      display: none;
+      position: absolute;
+      top: 29px;
+      right: 25px;
+      background-size: 1px 16px;
+      width: 1px;
+      height: 16px;
+      border-right: 1px solid $accordion-minus-color;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 37px;
+      right: 18px;
+      background-size: 16px 1px;
+      width: 16px;
+      height: 1px;
+      border-bottom: 1px solid $accordion-minus-color;
+    }
+  }
+}
+
+.partitions h3.partitions--plus-appear {
+  @media (max-width: $max-mobile) {
+    &::before {
+      display: block;
+    }
+  }
+}
+
+.partitions__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  min-width: 508px;
+  max-height: 120px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @media (max-width: $max-tablet) {
+    max-height: unset;
+    min-width: 250px;
+  }
+
+  @media (max-width: $max-mobile) {
+    display: none;
+    margin-bottom: 36px;
+    padding: 0 15px;
+  }
+}
+
+.partitions__list--appear {
+  display: flex;
+}
+
+.partitions__list-item a {
+  font-size: 15px;
+  line-height: 25px;
+  color: $ptmono-regular-font-color;
+
+  &:hover {
+    color: $partitions-item-hover;
+  }
+
+  &:active {
+    color: $partitions-item-active;
+  }
+}

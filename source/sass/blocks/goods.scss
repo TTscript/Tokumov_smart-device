@@ -1,0 +1,208 @@
+.goods {
+  background-color: $goods-background-color;
+  margin: 0;
+  padding: 89px 50px 127px 50px;
+
+  @media (max-width: $max-tablet) {
+    padding: 49px 25px 80px;
+  }
+
+  @media (max-width: $max-mobile) {
+    padding: 50px 15px 63px;
+  }
+}
+
+.goods__inner {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.goods__inner h2 {
+  @include roboto-condensed-regular();
+  font-size: 36px;
+  line-height: 51px;
+  color: $goods-title-color;
+  margin: 0 0 52px;
+  padding: 0;
+
+  @media (max-width: $max-tablet) {
+    max-width: 630px;
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  @media (max-width: $max-mobile) {
+    font-size: 28px;
+    line-height: 39px;
+    margin: 0 0 42px;
+    padding-left: 9px;
+  }
+}
+
+.goods__pictures-block {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+  justify-content: space-around;
+  align-content: center;
+  column-gap: 30px;
+  row-gap: 30px;
+  margin: 0;
+  padding: 0;
+
+  @media (max-width: $max-tablet) {
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+  }
+
+  @media (max-width: $max-mobile) {
+    row-gap: 30px;
+  }
+}
+
+.goods__pictures-block a {
+  &:hover {
+    outline: 4px solid $main-blue-color;
+    z-index: 1;
+  }
+}
+
+.goods__pictures-block picture {
+  width: 100%;
+}
+
+.goods__picture-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  min-width: 370px;
+  max-height: 620px;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+
+  @media (max-width: $max-tablet) {
+    max-height: 252px;
+  }
+
+  @media (max-width: $max-mobile) {
+    min-width: unset;
+    min-height: 256px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 63px;
+    height: 63px;
+    background-color: $main-blue-color;
+    z-index: 1;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 23px;
+    right: 16px;
+    background-image: url("../img/arrow.svg");
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 14px;
+    background-size: 6px;
+    z-index: 1;
+  }
+}
+
+.goods__picture-wrapper:hover {
+  &::before {
+    background-color: $goods-hover-background;
+  }
+}
+
+.goods__picture-wrapper:active {
+  &::before {
+    background-color: $goods-active-background;
+  }
+}
+
+.goods__picture-wrapper h3 {
+  @include roboto-condensed-regular();
+  position: absolute;
+  top: 50px;
+  left: 43px;
+  font-size: 20px;
+  line-height: 30px;
+  color: $goods-img-title-color;
+  z-index: 1;
+  max-width: 155px;
+  margin: 0;
+  padding: 0;
+
+  @media (max-width: $max-tablet) {
+    top: 37px;
+  }
+
+  @media (max-width: $max-mobile) {
+    top: 20px;
+    left: 33px;
+  }
+}
+
+.goods__picture-wrapper img {
+  width: 100%;
+  opacity: 0.2;
+
+  @media (max-width: $max-tablet) {
+    width: 100%;
+    height: unset;
+  }
+}
+
+.goods__circuit-boards {
+  margin: 0;
+  padding: 0;
+}
+
+.goods__circuit-boards img {
+  object-fit: cover;
+
+  @media (max-width: 1269px) and (min-width: $max-tablet) {
+    width: 600px;
+  }
+}
+
+.goods__pcb-mounting {
+  margin: 0;
+  padding: 0;
+}
+
+.goods__pcb-mounting img {
+  object-fit: cover;
+
+  @media (max-width: 1269px) and (min-width: $max-tablet) {
+    width: 600px;
+  }
+}
+
+.goods__components-for-lighting-technology {
+  margin: 0;
+  padding: 0;
+}
+
+.goods__components-for-lighting-technology img {
+  object-fit: cover;
+
+  @media (max-width: 1269px) and (min-width: $max-tablet) {
+    width: 600px;
+  }
+}
+
+.goods__components-for-lighting-technology h3 {
+  top: 47px;
+
+  @media (max-width: $max-mobile) {
+    top: 30px;
+  }
+}

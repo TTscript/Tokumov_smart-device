@@ -1,0 +1,251 @@
+.features {
+  margin: 0 0 107px 0;
+  padding: 0 50px;
+
+  @media (max-width: $max-tablet) {
+    margin: 0 0 55px;
+    padding: 0 25px;
+  }
+
+  @media (max-width: $max-mobile) {
+    margin: 0 0 52px;
+    padding: 0 13px;
+  }
+}
+
+.features__inner {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.features__list {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 30px;
+  column-gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @media (max-width: $max-mobile) {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    padding: 0;
+  }
+}
+
+.features__list-item {
+  max-width: 570px;
+  min-height: 299px;
+  border: 1px solid $features-border-color;
+  border-left: 3px solid $main-blue-color;
+  margin: 0;
+  padding: 42px 35px 10px 43px;
+
+  &:hover {
+    background-color: $features-list-item-hover;
+    cursor: pointer;
+  }
+
+  @media (max-width: $max-tablet) {
+    min-height: 306px;
+    padding: 25px 17px 10px 26px;
+  }
+
+  @media (max-width: $max-mobile) {
+    min-width: 100%;
+    min-height: 310px;
+  }
+}
+
+.features__list-item:hover h3 {
+  color: $features-text-color-hover;
+}
+
+.features__list-item:hover p {
+  color: $features-text-color-hover;
+}
+
+.features__list-item-inner {
+  margin: 0;
+  padding: 0;
+}
+
+.features__list-item h3 {
+  @include roboto-condensed-regular();
+  font-size: 24px;
+  line-height: 34px;
+  margin: 0 0 15px 0;
+  padding: 0;
+
+  @media (max-width: $max-tablet) {
+    margin: 0 0 9px;
+  }
+
+  @media (max-width: $max-mobile) {
+    font-size: 20px;
+  }
+}
+
+.features__list-item p {
+  line-height: 21px;
+  margin: 0;
+  padding: 0;
+}
+
+.features__time-frames h3 {
+  &::before {
+    content: "";
+    display: block;
+    -webkit-mask: url("../img/stopwatch.svg");
+    mask: url("../img/stopwatch.svg");
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    background-color: $main-blue-color;
+    background-size: 29px 35px;
+    width: 29px;
+    height: 35px;
+    margin: 0 0 20px;
+    padding: 0;
+
+    @media (max-width: $max-tablet) {
+      margin-bottom: 7px;
+    }
+  }
+}
+
+.features__time-frames:hover h3::before {
+  background-color: $features-text-color-hover;
+}
+
+.features__providers {
+  @media (max-width: $max-mobile) {
+    padding: 25px 10px 10px 26px;
+  }
+}
+
+.features__providers h3 {
+  &::before {
+    content: "";
+    display: block;
+    background-size: 35px;
+    width: 35px;
+    height: 35px;
+    -webkit-mask: url("../img/hired.svg");
+    mask: url("../img/hired.svg");
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    background-color: $main-blue-color;
+    margin: 0 0 20px 0;
+    padding: 0;
+
+    @media (max-width: $max-tablet) {
+      background-size: 32px;
+      width: 32px;
+      height: 32px;
+      margin: 0 0 11px 0;
+    }
+
+    @media (max-width: $max-mobile) {
+      margin: 0 0 9px;
+    }
+  }
+}
+
+.features__providers:hover h3::before {
+  background-color: $features-text-color-hover;
+}
+
+.features__privacy {
+  @media (max-width: $max-tablet) {
+    min-height: 230px;
+  }
+
+  @media (max-width: $max-mobile) {
+    padding: 25px 10px 10px 26px;
+  }
+}
+
+.features__privacy h3 {
+  @media (max-width: $max-tablet) {
+    margin: 0 0 16px;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    -webkit-mask: url("../img/detective.svg");
+    mask: url("../img/detective.svg");
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    background-color: $main-blue-color;
+    background-size: 36px 31px;
+    width: 36px;
+    height: 31px;
+    margin: 0 0 23px 0;
+    padding: 0;
+
+    @media (max-width: $max-tablet) {
+      background-size: 30px 26px;
+      width: 30px;
+      height: 26px;
+      margin-bottom: 13px;
+    }
+
+    @media (max-width: $max-mobile) {
+      margin-bottom: 7px;
+    }
+  }
+}
+
+.features__privacy:hover h3::before {
+  background-color: $features-text-color-hover;
+}
+
+.features__price {
+  @media (max-width: $max-tablet) {
+    min-height: 230px;
+  }
+
+  @media (max-width: $max-mobile) {
+    min-height: 245px;
+  }
+}
+
+.features__price h3 {
+  @media (max-width: $max-tablet) {
+    margin: 0 0 6px;
+  }
+
+  @media (max-width: $max-mobile) {
+    margin: 0 0 14px;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    -webkit-mask: url("../img/price-tag.svg");
+    mask: url("../img/price-tag.svg");
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    background-color: $main-blue-color;
+    background-size: 35px;
+    width: 35px;
+    height: 35px;
+    margin: 0 0 20px 0;
+    padding: 0;
+
+    @media (max-width: $max-tablet) {
+      background-size: 32px;
+      width: 32px;
+      height: 32px;
+      margin: 0 0 12px;
+    }
+  }
+}
+
+.features__price:hover h3::before {
+  background-color: $features-text-color-hover;
+}

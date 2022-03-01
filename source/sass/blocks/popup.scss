@@ -1,0 +1,222 @@
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  padding-top: 135px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.popup__shape {
+  position: relative;
+  background-color: $main-blue-color;
+  max-width: 490px;
+  margin: 0 auto;
+  padding: 33px 39px 27px;
+}
+
+.popup__shape h3 {
+  @include roboto-condensed-regular();
+  font-size: 28px;
+  line-height: 39px;
+  color: $popup-text-color;
+  text-align: left;
+  margin: 0 0 12px 0;
+  padding: 0;
+}
+
+.popup__shape-inner {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.popup__shape-inner legend {
+  line-height: 21px;
+  color: $popup-text-color;
+  text-align: left;
+  max-width: 400px;
+  margin: 0 0 32px 0;
+  padding: 0;
+}
+
+.popup__shape-inner-inputs-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  color: $popup-text-color;
+  margin: 0 0 30px 0;
+  padding: 0;
+}
+
+.popup__shape-inner-inputs-wrapper input {
+  min-width: 100%;
+  min-height: 50px;
+  border: 0;
+  color: $popup-text-color;
+  background-color: $shape-input-background-color;
+  margin: 0;
+  padding: 0 0 0 22px;
+
+  &:hover {
+    outline: 2px solid $shape-input-focus-hover;
+  }
+
+  &:focus {
+    outline: 2px solid $shape-input-focus-hover;
+  }
+}
+
+.popup__shape-inner-inputs-wrapper input::placeholder {
+  color: $popup-text-color;
+}
+
+.popup__shape-inner-enter-name {
+  margin-bottom: 33px;
+  padding: 0;
+}
+
+.popup__shape-inner-enter-name input {
+  margin-bottom: 0;
+}
+
+.popup__shape-inner-enter-phone {
+  margin: 0;
+  padding: 0;
+}
+
+.popup__shape-inner-enter-question {
+  margin: 0 0 27px 0;
+  padding: 0;
+}
+
+.popup__shape-inner-enter-question textarea {
+  color: $popup-text-color;
+  background-color: $shape-input-background-color;
+  border: 0;
+  min-width: 100%;
+  height: 105px;
+  margin: 0;
+  padding: 15px 15px 15px 22px;
+
+  &:hover {
+    outline: 2px solid $shape-input-focus-hover;
+  }
+
+  &:focus {
+    outline: 2px solid $shape-input-focus-hover;
+  }
+}
+
+.popup__shape-inner-enter-question textarea::placeholder {
+  color: $popup-text-color;
+}
+
+.popup__shape-inner button {
+  @include roboto-condensed-bold();
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+  min-width: 100%;
+  min-height: 47px;
+  border: 1px solid;
+  border-radius: 5px;
+  background-color: transparent;
+  color: $popup-text-color;
+  margin: 0 0 23px;
+  padding: 0;
+
+
+  &:hover {
+    background-color: $shape-button-hover-color;
+    color: $shape-text-hover;
+  }
+
+  &:active {
+    background-color: $shape-button-active-color;
+    color: $shape-text-active;
+  }
+}
+
+.popup__shape-inner-checkbox {
+  display: block;
+  max-width: 375px;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.popup__shape-inner-checkbox label {
+  display: block;
+  position: relative;
+  color: $popup-text-color;
+  font-size: 14px;
+  line-height: 16px;
+  opacity: 0.8;
+  cursor: pointer;
+  margin: 0;
+  padding: 10px 10px 10px 49px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: 0;
+    background-size: 16px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid $shape-checkbox-border-color;
+  }
+}
+
+.popup__shape-inner-checkbox input:checked + label {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 4px;
+    background-image: url("../img/checkbox.svg");
+    background-repeat: no-repeat;
+    background-size: 10px;
+    width: 10px;
+    height: 10px;
+  }
+}
+
+.popup__close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: block;
+  width: 23px;
+  height: 23px;
+  overflow: hidden;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+.popup__close-button-top-line {
+  position: relative;
+  top: 5px;
+  border-top: 1px solid $popup-close-button;
+  transform: matrix(0.71, 0.71, 0.71, -0.71, 0, 0);
+}
+
+.popup__close-button-bottom-line {
+  position: relative;
+  top: 4px;
+  left: 2px;
+  border-top: 1px solid $popup-close-button;
+  transform: matrix(0.71, -0.71, -0.71, -0.71, 0, 0);
+}
+
+.popup__shape-error {
+  outline: 2px solid $shape-error-border-color;
+}

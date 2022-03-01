@@ -1,0 +1,71 @@
+.ask-question {
+  background-color: $main-blue-color;
+  margin: 0;
+  padding: 91px 50px 44px;
+
+  @media (max-width: $max-tablet) {
+    padding: 76px 50px 99px;
+  }
+
+  @media (max-width: $max-mobile) {
+    padding: 30px 15px 32px;
+  }
+}
+
+.ask-question__inner {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  @media (max-width: $max-mobile) {
+    align-items: center;
+  }
+}
+
+.ask-question__inner .triangle-block {
+  position: relative;
+  top: 7px;
+  left: -114px;
+  min-width: 636px;
+  min-height: 535px;
+  margin-right: -24px;
+
+  @media (max-width: 1293px) {
+    top: 40px;
+    left: 25px;
+    order: 2;
+  }
+
+  @media (max-width: $max-tablet) {
+    display: none;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 64px;
+    left: 100px;
+    background-image: url("../img/desktop/paper-plane.png");
+    background-size: 511px 288px;
+    width: 511px;
+    height: 288px;
+    z-index: 1;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/desktop/paper-plane@2x.png");
+    }
+  }
+}
+
+.ask-question__inner .triangle-block__big-triangle {
+  &::before {
+    z-index: 1;
+  }
+}
+
+.ask-question__inner .triangle-block__small-triangle {
+  &::before {
+    z-index: 1;
+  }
+}

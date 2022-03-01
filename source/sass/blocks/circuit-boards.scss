@@ -1,0 +1,234 @@
+.circuit-boards {
+  min-width: 100%;
+  overflow: hidden;
+  margin: 0 0 112px 0;
+  padding: 0;
+
+  @media (max-width: $max-tablet) {
+    margin-bottom: 52px;
+  }
+
+  @media (max-width: $max-mobile) {
+    margin-bottom: 36px;
+  }
+}
+
+.circuit-boards__inner {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-height: 100%;
+  background-image: url("../img/desktop/mainback.jpg");
+  background-color: $main-block-background-color;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0 0 100px 50px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/desktop/mainback@2x.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  @media (max-width: $max-tablet) {
+    flex-wrap: nowrap;
+    padding: 0 0 65px 25px;
+  }
+
+  @media (max-width: $max-mobile) {
+    flex-direction: column;
+    align-items: center;
+    padding: 131px 9px 71px;
+  }
+}
+
+.circuit-boards__text-block {
+  z-index: 2;
+  margin: 0 24px 0 0;
+  padding: 325px 0 0 20px;
+
+  @media (max-width: 1615px) {
+    margin-bottom: 100px;
+  }
+
+  @media (max-width: $max-tablet) {
+    max-width: 430px;
+    flex: 0 0 100%;
+    margin-right: 0;
+    padding: 210px 0 0 35px;
+  }
+
+  @media (max-width: $max-mobile) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    order: 2;
+    margin: -30px 0 0 0;
+    padding: 0 0 0 5px;
+  }
+}
+
+.circuit-boards__text-block h2 {
+  @include roboto-condensed-bold();
+  font-size: 80px;
+  line-height: 94px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  max-width: 763px;
+  margin: 0 0 27px 0;
+  padding: 0;
+
+  @media (max-width: $max-tablet) {
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  @media (max-width: $max-mobile) {
+    max-width: 350px;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: left;
+    align-self: flex-start;
+    margin: 0 0 27px;
+  }
+}
+
+.circuit-boards__text-block p {
+  position: relative;
+  font-size: 22px;
+  line-height: 34px;
+  color: $circuit-boards-text-color;
+  text-align: left;
+  max-width: 763px;
+  margin: 0 0 44px  0;
+  padding: 0 0 0 97px;
+
+  @media (max-width: $max-tablet) {
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0 0 57px;
+    padding: 0 0 0 54px;
+  }
+
+  @media (max-width: $max-mobile) {
+    font-size: 16px;
+    line-height: 25px;
+    text-align: left;
+    max-width: unset;
+    margin: 0 0 40px;
+    padding: 0 15px 0 52px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 17px;
+    left: 7px;
+    border: 1px solid $circuit-boards-line-color;
+    width: 63px;
+
+    @media (max-width: $max-tablet) {
+      left: 6px;
+      width: 32px;
+    }
+
+    @media (max-width: $max-mobile) {
+      top: 15px;
+      left: 4px;
+    }
+  }
+}
+
+.circuit-boards__text-block button {
+  @include roboto-condensed-bold();
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  max-width: 407px;
+  min-width: 407px;
+  min-height: 55px;
+  border-radius: 5px;
+  outline: 0;
+  border: 0;
+  background-color: $main-blue-color;
+  transform: translateX(98px);
+  cursor: pointer;
+  margin: 0 auto;
+  padding: 10px;
+
+  &:hover {
+    background-color: $circuit-boards-hover;
+  }
+
+  &:active {
+    background-color: $circuit-boards-active;
+  }
+
+  &::after {
+    @media (max-width: $max-mobile) {
+      content: "Бесплатная консультация";
+      display: block;
+    }
+  }
+
+  @media (max-width: $max-tablet) {
+    transform: translateX(52px);
+    min-width: 379px;
+  }
+
+  @media (max-width: $max-mobile) {
+    transform: none;
+    min-width: 287px;
+  }
+}
+
+.circuit-boards__text-block span {
+  @media (max-width: $max-mobile) {
+    display: none;
+  }
+}
+
+.circuit-boards__picture-block {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  padding: 269px 0 0;
+
+  @media (max-width: 1560px) {
+    padding: 0;
+  }
+
+  @media (max-width: $max-tablet) {
+    transform: none;
+  }
+}
+
+.circuit-boards__picture-block-img {
+  @media (max-width: $max-tablet) {
+    position: unset;
+    padding-top: 135px;
+    width: calc(100vw - 506px);
+    overflow: hidden;
+    transform: translateX(29px);
+  }
+
+  @media (max-width: $max-mobile) {
+    width: unset;
+    transform: translateX(16px);
+    padding: 0;
+  }
+}
+
+.circuit-boards__picture-block img {
+  @media (max-width: $max-tablet) {
+    max-width: unset;
+    width: 465px;
+  }
+
+  @media (max-width: $max-mobile) {
+    width: 301px;
+  }
+}

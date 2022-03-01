@@ -1,0 +1,270 @@
+.shape {
+  min-width: 582px;
+  margin: 0;
+  padding: 0;
+
+  @media (max-width: $max-mobile) {
+    min-width: unset;
+  }
+
+  @media (max-width: $max-tablet) and (min-width: $min-tablet) {
+    min-width: 626px;
+    padding-left: 21px;
+  }
+}
+
+.shape h3 {
+  @include roboto-condensed-regular();
+  font-size: 36px;
+  line-height: 51px;
+  color: $shape-text-color;
+  max-width: 782px;
+  margin: 0 0 10px 0;
+  padding: 0;
+
+  @media (max-width: $max-tablet) {
+    font-size: 32px;
+    margin: 0 0 14px;
+  }
+
+  @media (max-width: $max-mobile) {
+    font-size: 28px;
+    line-height: 40px;
+  }
+}
+
+.shape__inner {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.shape__inner legend {
+  line-height: 21px;
+  color: $shape-text-color;
+  max-width: 320px;
+  margin: 0 0 49px 0;
+  padding: 0;
+
+  @media (max-width: $max-tablet) {
+    margin: 0 0 52px;
+  }
+
+  @media (max-width: $max-mobile) {
+    margin: 0 0 26px;
+  }
+}
+
+.shape__inner-inputs-wrapper {
+  display: flex;
+  color: $shape-text-color;
+  margin: 0 0 40px 0;
+  padding: 0;
+
+  @media (max-width: $max-tablet) {
+    margin: 0 0 44px;
+  }
+
+  @media (max-width: $max-mobile) {
+    display: block;
+    margin: 0 0 32px;
+  }
+}
+
+.shape__inner-inputs-wrapper input {
+  min-width: 100%;
+  min-height: 50px;
+  border: 0;
+  color: $shape-text-color;
+  background-color: $shape-input-background-color;
+  margin: 0;
+  padding: 0 0 0 15px;
+
+  &:hover {
+    outline: 1px solid $shape-input-focus-hover;
+  }
+
+  &:focus {
+    outline: 1px solid $shape-input-focus-hover;
+  }
+}
+
+.shape__inner-inputs-wrapper input::placeholder {
+  color: $shape-text-color;
+}
+
+.shape__inner-enter-name {
+  max-width: 270px;
+  min-width: 46%;
+  flex: 1;
+  margin: 0 30px 0 0;
+  padding: 0;
+
+  @media (max-width: $max-mobile) {
+    min-width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+.shape__inner-enter-phone {
+  max-width: 270px;
+  min-width: 46%;
+  flex: 1;
+  margin: 0;
+  padding: 0;
+
+  @media (max-width: $max-mobile) {
+    min-width: 100%;
+  }
+}
+
+.shape__inner-enter-question {
+  margin: 0 0 34px;
+  padding: 0;
+
+  @media (max-width: $max-tablet) {
+    margin: 0 0 40px;
+  }
+
+  @media (max-width: $max-mobile) {
+    margin: 0 0 27px;
+  }
+}
+
+.shape__inner-enter-question textarea {
+  color: $shape-text-color;
+  background-color: $shape-input-background-color;
+  border: 0;
+  min-width: 98%;
+  margin: 0;
+  padding: 15px;
+
+  &:hover {
+    outline: 1px solid $shape-input-focus-hover;
+  }
+
+  &:focus {
+    outline: 1px solid $shape-input-focus-hover;
+  }
+
+  @media (max-width: $max-mobile) {
+    min-width: unset;
+    width: 100%;
+    height: 106px;
+    font-size: 16px;
+  }
+}
+
+.shape__inner-enter-question textarea::placeholder {
+  color: $shape-text-color;
+}
+
+.shape__inner button {
+  @include roboto-condensed-bold();
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  max-width: 270px;
+  min-width: 270px;
+  min-height: 45px;
+  border: 1px solid;
+  border-radius: 5px;
+  background-color: transparent;
+  color: $shape-text-color;
+  cursor: pointer;
+  margin: 0 16px 0 0;
+  padding: 10px;
+
+  &:hover {
+    background-color: $shape-button-hover-color;
+    color: $shape-text-hover;
+  }
+
+  &:active {
+    background-color: $shape-button-active-color;
+    color: $shape-text-active;
+  }
+
+  @media (max-width: $max-tablet) {
+    min-width: 280px;
+  }
+
+  @media (max-width: $max-mobile) {
+    min-width: 290px;
+    text-align: center;
+    margin: 0 auto 21px;
+  }
+}
+
+.shape__inner-checkbox {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 260px;
+  margin: 0;
+  padding: 0;
+
+  @media (max-width: $max-mobile) {
+    display: block;
+    padding-left: 34px;
+  }
+
+  @media (max-width: $max-mobile) {
+    padding: 0;
+  }
+}
+
+.shape__inner-checkbox label {
+  display: block;
+  position: relative;
+  color: $shape-text-color;
+  font-size: 14px;
+  line-height: 16px;
+  opacity: 0.8;
+  cursor: pointer;
+  margin: 0;
+  padding: 10px 10px 10px 45px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background-size: 16px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid $shape-checkbox-border-color;
+
+    @media (max-width: $max-mobile) {
+      top: 11px;
+      left: 1px;
+    }
+  }
+
+  @media (max-width: $max-mobile) {
+    padding: 10px 10px 10px 34px;
+  }
+}
+
+.shape__inner-checkbox input:checked + label {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 15px;
+    background-image: url("../img/checkbox.svg");
+    background-repeat: no-repeat;
+    background-size: 10px;
+    width: 10px;
+    height: 10px;
+
+    @media (max-width: $max-mobile) {
+      top: 16px;
+      left: 4px;
+    }
+  }
+}
+
+.shape__error {
+  outline: 2px solid $shape-error-border-color;
+}

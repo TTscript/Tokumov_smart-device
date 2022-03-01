@@ -1,166 +1,90 @@
 .page-footer {
   min-width: 100%;
   margin: 0;
-  padding: 0;
-}
+  padding: 65px 0 0;
 
-// .page-footer__inner {
-//   min-width: 100%;
-// }
+  @media (max-width: $max-tablet) {
+    padding: 18px 0 0;
+  }
+
+  @media (max-width: $max-mobile) {
+    padding: 46px 0 0;
+  }
+}
 
 .page-footer__contacts-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  max-width: 1420px;
-  margin: 0 auto;
-  padding: 0;
-}
+  max-width: 1520px;
+  margin: 0 auto 55px auto;
+  padding: 0 50px;
 
-// .page-header__logo-socials-block {
-// }
+  @media (max-width: $max-tablet) {
+    flex-direction: column;
+    margin: 0 auto 36px;
+    padding: 0;
+  }
 
-.page-footer__logo-block {
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
+  @media (max-width: $max-tablet) and (min-width: $min-tablet) {
+    display: block;
+  }
 
-.page-footer__logo-block img {
-  margin: 0 16px 54px 0;
-  padding: 0;
-}
-
-.page-footer__logo-text-block {
-  margin: 0;
-  padding: 0;
-}
-
-.page-footer__logo-text-block h3 {
-  @include roboto-condensed-bold();
-  color: $page-footer-logo-block-title-color;
-  margin: 0 0 16px 0;
-  padding: 0;
-}
-
-.page-footer__logo-text-block p {
-  @include roboto-medium();
-  margin: 0;
-  padding: 0;
-}
-
-.page-footer__socials {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.page-footer__socials-facebook {
-  position: relative;
-  margin: 0 35px 0 0;
-  padding: 0;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-image: url("../img/facebook.svg");
-    background-size: 26px 26px;
-    width: 26px;
-    height: 26px;
+  @media (max-width: $max-mobile) {
+    display: block;
+    margin-bottom: 0;
   }
 }
 
-.page-footer__socials-classmates {
-  position: relative;
-  margin: 0 35px 0 0;
+.page-footer__logo-socials-block {
+  max-width: 210px;
+  margin: 0 50px 0 0;
   padding: 0;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-image: url("../img/classmates.svg");
-    background-size: 26px 26px;
-    width: 26px;
-    height: 26px;
+  @media (max-width: $max-tablet) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    min-width: 100%;
+    max-height: 200px;
+    border-bottom: 1px solid $page-footer-copyright-border-color;
+    margin-bottom: 38px;
+    padding: 0 25px 24px;
+  }
+
+  @media (max-width: $max-mobile) {
+    justify-content: space-between;
+    margin: 0 0 54px;
+    padding: 0 25px 0 44px;
+    border: 0;
+  }
+
+  @media (max-width: 638px) {
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
-.page-footer__socials-vk {
-  position: relative;
-  margin: 0;
-  padding: 0;
+.page-footer__logo-socials-block > p {
+  display: none;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-image: url("../img/vk.svg");
-    background-size: 27px 26px;
-    width: 27px;
-    height: 26px;
+  @media (max-width: $max-tablet) {
+    display: block;
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+  }
+
+  @media (max-width: $max-mobile) {
+    margin-right: 10px;
+  }
+
+  @media (max-width: 638px) {
+    margin-bottom: 31px;
   }
 }
 
-// .page-footer__site-partitions {
-
-// }
-
-.page-footer__site-partitions h3 {
-  @include roboto-condensed-regular();
-  font-size: 15px;
-  line-height: 16px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: $page-footer-partitions-title-color;
-  margin: 0 0 29px 0;
-  padding: 0;
-}
-
-.page-footer__partitions-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  width: 200px;
-  height: 114px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-  // &__partitions-list-item {
-  // }
-
-  // &__address-and-contacts {
-  // }
-
-  // &__copyrights {
-  // }
-
-  // &__copyrights-inner {
-  // }
-
-  // &__privacy-policy {
-  // }
-
-
-.page-footer__copyrights-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1420px;
-  margin: 0 auto;
-  padding: 0;
-}
-
-.page-footer__privacy-policy {
-  display: flex;
-  margin: 0;
-  padding: 0;
-}

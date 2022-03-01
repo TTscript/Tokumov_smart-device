@@ -1,0 +1,118 @@
+.socials {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  @media (max-width: 638px) {
+    transform: translate(-11px, 0);
+  }
+}
+
+.socials-facebook {
+  position: relative;
+  cursor: pointer;
+  margin: 0 18px 0 0;
+  padding: 0;
+
+  @media (max-width: $max-tablet) {
+    margin: 0 15px 0 0;
+  }
+
+  &::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-mask: url("../img/facebook.svg");
+    mask: url("../img/facebook.svg");
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    background-color: $socials-background;
+    background-size: 26px 26px;
+    width: 26px;
+    height: 26px;
+  }
+}
+
+.socials-facebook:hover {
+  &::before {
+    background-color: $social-fb-hover;
+  }
+}
+
+.socials-facebook:active {
+  &::before {
+    background-color: $social-fb-active;
+  }
+}
+
+.socials-classmates {
+  position: relative;
+  cursor: pointer;
+  margin: 0 18px 0 0;
+  padding: 0;
+
+  @media (max-width: $max-tablet) {
+    margin: 0 15px 0 0;
+  }
+
+  &::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    left: 0;
+    -webkit-mask: url("../img/classmates.svg");
+    mask: url("../img/classmates.svg");
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    background-color: $socials-background;
+    background-size: 26px 26px;
+    width: 26px;
+    height: 26px;
+  }
+}
+
+.socials-classmates:hover {
+  &::before {
+    background-color: $social-classmates-hover;
+  }
+}
+
+.socials-classmates:active {
+  &::before {
+    background-color: $social-classmates-active;
+  }
+}
+
+.socials-vk {
+  position: relative;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-mask: url("../img/vk.svg");
+    mask: url("../img/vk.svg");
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    background-color: $socials-background;
+    background-size: 27px 26px;
+    width: 27px;
+    height: 26px;
+  }
+}
+
+.socials-vk:hover {
+  &::before {
+    background-color: $social-vk-hover;
+  }
+}
+
+.socials-vk:active {
+  &::before {
+    background-color: $social-vk-active;
+  }
+}
+
