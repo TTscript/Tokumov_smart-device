@@ -95,17 +95,13 @@ function install() {
   popupShapeInputName.focus();
 }
 
-// install();
-
 pageHeaderButton.addEventListener('click', install);
 
 //LOCAL STORAGE
 shape.addEventListener('submit', () => {
-  // evt.preventDefault();
   localStorage.setItem('name', `${shapeName.value}`);
   localStorage.setItem('tel', `${shapePhone.value}`);
   localStorage.setItem('question', `${shapeTextarea.value}`);
-  // shape.reset();
 });
 
 //FORM VALIDATION
@@ -231,6 +227,7 @@ const pageHeader = document.querySelector('.page-header');
 const pageMain = document.querySelector('.page-main');
 let svgHeight = 12;
 
+const minDesktop = window.matchMedia('(min-width: 1024px)');
 const maxTablet = window.matchMedia('(max-width: 1023px) and (min-width: 768px)');
 const maxMobile = window.matchMedia('(max-width: 767px)');
 
@@ -245,12 +242,28 @@ let pageHeaderHeight = pageHeader.getBoundingClientRect().height;
 pageMain.style.marginTop = `-${pageHeaderHeight + svgHeight}px`;
 
 window.addEventListener('resize', () => {
+  if (minDesktop.matches) {
+    svgHeight = 12;
+  }
+  else if (maxTablet.matches) {
+    svgHeight = 23;
+  } else if (maxMobile.matches) {
+    svgHeight = 39;
+  }
   pageHeaderHeight = pageHeader.getBoundingClientRect().height;
   pageMain.style.marginTop = `-${pageHeaderHeight + svgHeight}px`;
   pageHeader.addEventListener('change', correctHeaderHeight);
 });
 
 function correctHeaderHeight() {
+  if (minDesktop.matches) {
+    svgHeight = 12;
+  }
+  else if (maxTablet.matches) {
+    svgHeight = 23;
+  } else if (maxMobile.matches) {
+    svgHeight = 39;
+  }
   pageHeaderHeight = pageHeader.getBoundingClientRect().height;
   pageMain.style.marginTop = `-${pageHeaderHeight + svgHeight}px`;
 }
