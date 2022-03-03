@@ -41,6 +41,19 @@
     display: none;
   }
 
+  &::before {
+    content: "";
+    position: absolute;
+    top: -157px;
+    left: -74px;
+    background-image: url("../img/desktop/main-triangle.svg");
+    background-repeat: no-repeat;
+    width: 670px;
+    height: 670px;
+    background-size: 670px;
+    z-index: 1;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -58,14 +71,4 @@
   }
 }
 
-.ask-question__inner .triangle-block__big-triangle {
-  &::before {
-    z-index: 1;
-  }
-}
 
-.ask-question__inner .triangle-block__small-triangle {
-  &::before {
-    z-index: 1;
-  }
-}

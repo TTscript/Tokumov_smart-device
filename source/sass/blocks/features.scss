@@ -1,19 +1,36 @@
 .features {
-  margin: 0 0 107px 0;
-  padding: 0 50px;
+  position: relative;
+  background: transparent url("../img/desktop/features-left-triangle.svg") no-repeat,
+              transparent url("../img/desktop/features-right-triangle.svg") no-repeat;
+  background-position: 202px 44px,
+                       1668px 462px;
+  margin: 0 0 107px;
+  padding: 112px 50px 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 147px;
+    left: calc(100vw - 1360px);
+    background: url("../img/desktop/features-bottom-triangle.svg") no-repeat;
+    width: 770px;
+    height: 770px;
+    background-size: 870px;
+  }
 
   @media (max-width: $max-tablet) {
     margin: 0 0 55px;
-    padding: 0 25px;
+    padding: 52px 25px 0;
   }
 
   @media (max-width: $max-mobile) {
-    margin: 0 0 52px;
+    margin: 36px 0 52px;
     padding: 0 13px;
   }
 }
 
 .features__inner {
+  position: relative;
   max-width: 1170px;
   margin: 0 auto;
   padding: 0;
@@ -41,6 +58,7 @@
   min-height: 299px;
   border: 1px solid $features-border-color;
   border-left: 3px solid $main-blue-color;
+  background-color: $features-list-background-color;
   margin: 0;
   padding: 42px 35px 10px 43px;
 

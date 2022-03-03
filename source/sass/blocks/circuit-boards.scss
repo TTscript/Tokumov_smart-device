@@ -1,19 +1,12 @@
 .circuit-boards {
   min-width: 100%;
   overflow: hidden;
-  margin: 0 0 112px 0;
   padding: 0;
-
-  @media (max-width: $max-tablet) {
-    margin-bottom: 52px;
-  }
-
-  @media (max-width: $max-mobile) {
-    margin-bottom: 36px;
-  }
+  margin: 0;
 }
 
 .circuit-boards__inner {
+  position: relative;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -24,6 +17,31 @@
   background-position: center;
   margin: 0;
   padding: 0 0 100px 50px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 130px;
+    right: 220px;
+    background-image: url("../img/desktop/main-triangle.svg");
+    background-repeat: no-repeat;
+    width: 670px;
+    height: 670px;
+    background-size: 670px;
+    z-index: 1;
+
+    @media (max-width: $max-tablet) {
+      top: -16px;
+      right: -343px;
+      background-size: 528px;
+    }
+
+    @media (max-width: $max-mobile) {
+      top: -8px;
+      right: -502px;
+      background-size: 506px;
+    }
+  }
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/desktop/mainback@2x.jpg");
@@ -192,7 +210,6 @@
 }
 
 .circuit-boards__picture-block {
-  position: relative;
   z-index: 1;
   margin: 0;
   padding: 269px 0 0;

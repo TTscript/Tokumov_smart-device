@@ -1,6 +1,19 @@
 .about-company {
+  position: relative;
   margin: 0 0 110px;
   padding: 0 50px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -403px;
+    left: calc(100vw - 1950px);
+    background: url("../img/desktop/2005-triangle.svg") no-repeat;
+    width: 770px;
+    height: 770px;
+    background-size: 870px;
+    z-index: -1;
+  }
 
   @media (max-width: $max-tablet) {
     margin: 0 0 84px;

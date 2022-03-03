@@ -186,12 +186,12 @@
   }
 }
 
-.goods__components-for-lighting-technology {
+.goods__components {
   margin: 0;
   padding: 0;
 }
 
-.goods__components-for-lighting-technology img {
+.goods__components img {
   object-fit: cover;
 
   @media (max-width: 1269px) and (min-width: $max-tablet) {
@@ -199,7 +199,7 @@
   }
 }
 
-.goods__components-for-lighting-technology h3 {
+.goods__components h3 {
   top: 47px;
 
   @media (max-width: $max-mobile) {

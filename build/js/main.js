@@ -203,7 +203,7 @@ const mask = (selector) => {
     }
 
     // eslint-disable-next-line no-nested-ternary
-    this.value = matrix.replace(/./g, (a) => /[_\d]/.test(a) && i < val.  length ? val.charAt(i++) : i >= val.length ? '' : a);
+    this.value = matrix.replace(/./g, (a) => /[_\d]/.test(a) && i < val.length ? val.charAt(i++) : i >= val.length ? '' : a);
 
     if (event.type === 'blur') {
       if (this.value.length === 2) {
