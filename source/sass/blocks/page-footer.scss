@@ -41,6 +41,10 @@
   margin: 0 50px 0 0;
   padding: 0;
 
+  @media (max-width: 1191px) {
+    margin-right: 5px;
+  }
+
   @media (max-width: $max-tablet) {
     display: flex;
     justify-content: space-between;
@@ -55,7 +59,7 @@
 
   @media (max-width: $max-mobile) {
     justify-content: space-between;
-    margin: 0 0 54px;
+    margin: 0 0 45px;
     padding: 0 25px 0 44px;
     border: 0;
   }
@@ -81,6 +85,7 @@
 
   @media (max-width: $max-mobile) {
     margin-right: 10px;
+    transform: unset;
   }
 
   @media (max-width: 638px) {

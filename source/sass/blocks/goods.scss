@@ -42,7 +42,7 @@
 
 .goods__pictures-block {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   justify-content: space-around;
   align-content: center;
   column-gap: 30px;
@@ -68,6 +68,7 @@
 }
 
 .goods__pictures-block picture {
+  display: flex;
   width: 100%;
 }
 
@@ -75,7 +76,7 @@
   position: relative;
   overflow: hidden;
   display: flex;
-  min-width: 370px;
+  min-width: 100%;
   max-height: 620px;
   cursor: pointer;
   margin: 0;
@@ -155,7 +156,6 @@
   opacity: 0.2;
 
   @media (max-width: $max-tablet) {
-    width: 100%;
     height: unset;
   }
 }
@@ -165,12 +165,36 @@
   padding: 0;
 }
 
+.goods__circuit-boards picture:first-of-type {
+  @media (max-width: $max-tablet) {
+    display: none;
+  }
+}
+
+.goods__circuit-boards picture:last-of-type {
+  display: none;
+
+  @media (max-width: $max-tablet) {
+    display: flex;
+  }
+}
+
+.goods__circuit-boards img[src="img/desktop/pcb-production.png"] {
+  @media (max-width: $max-tablet) {
+    display: none;
+  }
+}
+
+.goods__circuit-boards img[src="img/tablet/pcb-production.png"] {
+  display: none;
+
+  @media (max-width: $max-tablet) {
+    display: flex;
+  }
+}
+
 .goods__circuit-boards img {
   object-fit: cover;
-
-  @media (max-width: 1269px) and (min-width: $max-tablet) {
-    width: 600px;
-  }
 }
 
 .goods__pcb-mounting {
@@ -180,10 +204,6 @@
 
 .goods__pcb-mounting img {
   object-fit: cover;
-
-  @media (max-width: 1269px) and (min-width: $max-tablet) {
-    width: 600px;
-  }
 }
 
 .goods__components {
@@ -193,10 +213,6 @@
 
 .goods__components img {
   object-fit: cover;
-
-  @media (max-width: 1269px) and (min-width: $max-tablet) {
-    width: 600px;
-  }
 }
 
 .goods__components h3 {

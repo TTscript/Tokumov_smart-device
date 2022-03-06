@@ -225,46 +225,19 @@ mask(popupShapePhone);
 
 const pageHeader = document.querySelector('.page-header');
 const pageMain = document.querySelector('.page-main');
-let svgHeight = 12;
-
-const minDesktop = window.matchMedia('(min-width: 1024px)');
-const maxTablet = window.matchMedia('(max-width: 1023px) and (min-width: 768px)');
-const maxMobile = window.matchMedia('(max-width: 767px)');
-
 window.addEventListener('DOMContentLoaded', correctHeaderHeight);
-if (maxTablet.matches) {
-  svgHeight = 23;
-} else if (maxMobile.matches) {
-  svgHeight = 39;
-}
 
 let pageHeaderHeight = pageHeader.getBoundingClientRect().height;
-pageMain.style.marginTop = `-${pageHeaderHeight + svgHeight}px`;
+pageMain.style.marginTop = `-${pageHeaderHeight}px`;
 
 window.addEventListener('resize', () => {
-  if (minDesktop.matches) {
-    svgHeight = 12;
-  }
-  else if (maxTablet.matches) {
-    svgHeight = 23;
-  } else if (maxMobile.matches) {
-    svgHeight = 39;
-  }
   pageHeaderHeight = pageHeader.getBoundingClientRect().height;
-  pageMain.style.marginTop = `-${pageHeaderHeight + svgHeight}px`;
+  pageMain.style.marginTop = `-${pageHeaderHeight}px`;
   pageHeader.addEventListener('change', correctHeaderHeight);
 });
 
 function correctHeaderHeight() {
-  if (minDesktop.matches) {
-    svgHeight = 12;
-  }
-  else if (maxTablet.matches) {
-    svgHeight = 23;
-  } else if (maxMobile.matches) {
-    svgHeight = 39;
-  }
   pageHeaderHeight = pageHeader.getBoundingClientRect().height;
-  pageMain.style.marginTop = `-${pageHeaderHeight + svgHeight}px`;
+  pageMain.style.marginTop = `-${pageHeaderHeight}px`;
 }
 

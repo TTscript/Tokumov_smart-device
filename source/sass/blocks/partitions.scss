@@ -33,6 +33,7 @@
 
   @media (max-width: $max-mobile) {
     cursor: pointer;
+    min-width: 100%;
     padding: 29px 10px 27px 10px;
     margin: 0;
 
@@ -76,10 +77,15 @@
   align-items: flex-start;
   flex-wrap: wrap;
   min-width: 508px;
+  max-width: 508px;
   max-height: 120px;
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (max-width: 1191px) {
+    min-width: 381px;
+  }
 
   @media (max-width: $max-tablet) {
     max-height: unset;
@@ -97,12 +103,17 @@
   display: flex;
 }
 
+.partitions__list-item {
+  margin-right: 15px;
+}
+
 .partitions__list-item a {
   font-size: 15px;
   line-height: 25px;
   color: $ptmono-regular-font-color;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $partitions-item-hover;
   }
 

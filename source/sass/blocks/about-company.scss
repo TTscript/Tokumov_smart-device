@@ -153,7 +153,8 @@
   margin: 0;
   padding: 10px;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $about-company-button-hover;
     color: $about-company-text-hover;
   }

@@ -1,9 +1,8 @@
 .features {
   position: relative;
   background: transparent url("../img/desktop/features-left-triangle.svg") no-repeat,
-              transparent url("../img/desktop/features-right-triangle.svg") no-repeat;
-  background-position: 202px 44px,
-                       1668px 462px;
+    transparent url("../img/desktop/features-right-triangle.svg") no-repeat;
+  background-position: 202px 44px, 1668px 462px;
   margin: 0 0 107px;
   padding: 112px 50px 0;
 
@@ -56,6 +55,7 @@
 .features__list-item {
   max-width: 570px;
   min-height: 299px;
+  height: 100%;
   border: 1px solid $features-border-color;
   border-left: 3px solid $main-blue-color;
   background-color: $features-list-background-color;

@@ -2,16 +2,31 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
+  max-width: 150px;
+
+  @media (max-width: $max-tablet) {
+    transform: translate(4px, 5px);
+  }
 
   @media (max-width: 638px) {
-    transform: translate(-11px, 0);
+    transform: translate(-10px, 1px);
+  }
+}
+
+.socials a {
+  margin-right: 18px;
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-right: 0;
   }
 }
 
 .socials-facebook {
   position: relative;
   cursor: pointer;
-  margin: 0 18px 0 0;
+  margin: 0;
   padding: 0;
 
   @media (max-width: $max-tablet) {
@@ -33,7 +48,8 @@
   }
 }
 
-.socials-facebook:hover {
+.socials-facebook:hover,
+.socials-facebook:focus {
   &::before {
     background-color: $social-fb-hover;
   }
@@ -48,7 +64,7 @@
 .socials-classmates {
   position: relative;
   cursor: pointer;
-  margin: 0 18px 0 0;
+  margin: 0;
   padding: 0;
 
   @media (max-width: $max-tablet) {
@@ -71,7 +87,8 @@
   }
 }
 
-.socials-classmates:hover {
+.socials-classmates:hover,
+.socials-classmates:focus {
   &::before {
     background-color: $social-classmates-hover;
   }
@@ -104,7 +121,8 @@
   }
 }
 
-.socials-vk:hover {
+.socials-vk:hover,
+.socials-vk:focus {
   &::before {
     background-color: $social-vk-hover;
   }

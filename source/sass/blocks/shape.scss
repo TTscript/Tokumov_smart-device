@@ -136,6 +136,7 @@
   background-color: $shape-input-background-color;
   border: 0;
   min-width: 98%;
+  resize: none;
   margin: 0;
   padding: 15px;
 
@@ -176,7 +177,8 @@
   margin: 0 16px 0 0;
   padding: 10px;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $shape-button-hover-color;
     color: $shape-text-hover;
   }

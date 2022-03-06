@@ -1,6 +1,14 @@
 .page-main {
   flex: 1;
   min-width: 100%;
-  margin: -95px 0 0 0;
+  margin: -87px 0 0;
   padding: 0;
+
+  @media (max-width: $max-tablet) {
+    margin-top: -77px;
+  }
+
+  @media (max-width: $max-mobile) {
+    margin-top: -60px;
+  }
 }
