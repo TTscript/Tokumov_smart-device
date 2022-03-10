@@ -188,13 +188,16 @@
 
 .circuit-boards__picture-block {
   transform: translateX(181px);
-  width: calc(1px + 100vw - 856px);
   z-index: 1;
   background-image: url("../img/desktop/main-triangle.svg");
   background-repeat: no-repeat;
   background-position: -5px 119px;
   margin: 0;
   padding: 257px 0 0;
+
+  @media (min-width: $desktop) and (max-width: $max-desktop) {
+    width: calc(1px + 100vw - 856px);
+  }
 
   @media (max-width: $max-tablet) {
     background-image: url("../img/tablet/main-triangle.svg");

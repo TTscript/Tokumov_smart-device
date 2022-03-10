@@ -1,8 +1,10 @@
 .partitions {
+  transform: translateX(-48px);
   margin: 0;
   padding: 0 0 0 10px;
 
   @media (max-width: $max-tablet) {
+    transform: unset;
     padding: 0 0 0 23px;
     margin: 0;
   }
@@ -70,44 +72,42 @@
   }
 }
 
-.partitions__list {
+.partitions__inner {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
   flex-wrap: wrap;
-  min-width: 508px;
-  max-width: 508px;
-  max-height: 120px;
-  list-style: none;
   margin: 0;
   padding: 0;
 
-  @media (max-width: 1191px) {
-    min-width: 381px;
-  }
-
   @media (max-width: $max-tablet) {
-    max-height: unset;
-    min-width: 250px;
+    flex-direction: column;
   }
 
   @media (max-width: $max-mobile) {
     display: none;
-    margin-bottom: 36px;
-    padding: 0 15px;
+    margin-bottom: 26px;
+    padding: 0 17px;
   }
 }
 
-.partitions__list--appear {
+.partitions__inner ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  &:first-child {
+    margin-right: 74px;
+  }
+
+  &:last-child {
+    margin-right: 15px;
+  }
+}
+
+.partitions__inner--appear {
   display: flex;
 }
 
-.partitions__list-item {
-  margin-right: 15px;
-}
-
-.partitions__list-item a {
+.partitions__inner a {
   font-size: 15px;
   line-height: 25px;
   color: $ptmono-regular-font-color;

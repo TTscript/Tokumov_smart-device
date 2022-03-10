@@ -228,7 +228,7 @@
   padding: 10px 10px 10px 45px;
 
   &:hover {
-    opacity: .6;
+    opacity: 0.6;
   }
 
   &::before {
@@ -276,5 +276,5 @@
 }
 
 input[id="checkbox"]:focus + label {
-    outline: 2px solid $checkbox-focus-border;
+  outline: 2px solid $checkbox-focus-border;
 }

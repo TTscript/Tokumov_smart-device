@@ -13,6 +13,10 @@
   }
 }
 
+.page-header--change-position {
+  position: unset;
+}
+
 .page-header__inner {
   display: flex;
   justify-content: space-between;
@@ -49,6 +53,7 @@
 
 .page-header__logo-block img[src^="img/mobile"] {
   display: none;
+
   @media (max-width: $max-mobile) {
     display: block;
   }
@@ -57,6 +62,8 @@
 .page-header__contacts {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
   margin: 0;
   padding: 0 5px 0 0;
 

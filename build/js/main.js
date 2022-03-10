@@ -2,7 +2,7 @@
 
 const sitePartitionsTitle = document.querySelector('.partitions')
   .querySelector('h3');
-const sitePartitionsList = document.querySelector('.partitions__list');
+const sitePartitionsInner = document.querySelector('.partitions__inner');
 const siteAddressTitle = document.querySelector('.address')
   .querySelector('h3');
 const siteAddressContacts = document.querySelector('.address__inner');
@@ -24,14 +24,14 @@ const popupShapePhone = popup.querySelector('#tel-popup-input');
 let sitePartitionsOpen = false;
 let addressOpen = false;
 
-sitePartitionsList.classList.remove('partitions__list--appear');
+sitePartitionsInner.classList.remove('partitions__inner--appear');
 sitePartitionsTitle.classList.add('partitions--plus-appear');
 siteAddressContacts.classList.remove('address__inner--appear');
 siteAddressTitle.classList.add('address--plus-appear');
 
 sitePartitionsTitle.addEventListener('click', () => {
   sitePartitionsOpen = !sitePartitionsOpen;
-  sitePartitionsList.classList.toggle('partitions__list--appear');
+  sitePartitionsInner.classList.toggle('partitions__inner--appear');
   sitePartitionsTitle.classList.toggle('partitions--plus-appear');
 
   if (addressOpen === true) {
@@ -47,7 +47,7 @@ siteAddressTitle.addEventListener('click', () => {
   siteAddressTitle.classList.toggle('address--plus-appear');
 
   if (sitePartitionsOpen === true) {
-    sitePartitionsList.classList.remove('partitions__list--appear');
+    sitePartitionsInner.classList.remove('partitions__inner--appear');
     sitePartitionsTitle.classList.add('partitions--plus-appear');
     sitePartitionsOpen = !sitePartitionsOpen;
   }
@@ -222,11 +222,11 @@ const mask = (selector) => {
 mask(shapePhone);
 mask(popupShapePhone);
 
-
+//OVERFLOW
 const pageHeader = document.querySelector('.page-header');
 const pageMain = document.querySelector('.page-main');
-window.addEventListener('DOMContentLoaded', correctHeaderHeight);
 
+window.addEventListener('DOMContentLoaded', correctHeaderHeight);
 let pageHeaderHeight = pageHeader.getBoundingClientRect().height;
 pageMain.style.marginTop = `-${pageHeaderHeight}px`;
 
@@ -240,3 +240,6 @@ function correctHeaderHeight() {
   pageHeaderHeight = pageHeader.getBoundingClientRect().height;
   pageMain.style.marginTop = `-${pageHeaderHeight}px`;
 }
+
+pageHeader.addEventListener('DOMNodeInserted', correctHeaderHeight);
+pageHeader.addEventListener('DOMNodeRemoved', correctHeaderHeight);
