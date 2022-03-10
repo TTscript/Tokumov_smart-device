@@ -240,4 +240,3 @@ function correctHeaderHeight() {
   pageHeaderHeight = pageHeader.getBoundingClientRect().height;
   pageMain.style.marginTop = `-${pageHeaderHeight}px`;
 }
-

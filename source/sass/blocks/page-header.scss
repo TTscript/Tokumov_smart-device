@@ -41,25 +41,17 @@
   }
 }
 
-.page-header__logo-text-block {
-  max-width: 135px;
-
+.page-header__logo-block img[src^="img/desktop"] {
   @media (max-width: $max-mobile) {
     display: none;
   }
 }
 
-.page-header__logo-text-block h3 {
-  @include roboto-condensed-bold();
-  max-width: 150px;
-  margin: 0 0 2px 0;
-  padding: 0;
-}
-
-.page-header__logo-text-block p {
-  @include roboto-medium();
-  margin: 0;
-  padding: 0;
+.page-header__logo-block img[src^="img/mobile"] {
+  display: none;
+  @media (max-width: $max-mobile) {
+    display: block;
+  }
 }
 
 .page-header__contacts {

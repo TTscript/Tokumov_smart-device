@@ -227,6 +227,10 @@
   margin: 0;
   padding: 10px 10px 10px 45px;
 
+  &:hover {
+    opacity: .6;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -269,4 +273,8 @@
 
 .shape__error {
   outline: 2px solid $shape-error-border-color;
+}
+
+input[id="checkbox"]:focus + label {
+    outline: 2px solid $checkbox-focus-border;
 }

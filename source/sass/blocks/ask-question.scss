@@ -3,7 +3,7 @@
   margin: 0;
   padding: 91px 50px 44px;
 
-  overflow: hidden;
+  // overflow: hidden;
 
   @media (max-width: $max-tablet) {
     padding: 76px 50px 99px;
@@ -16,6 +16,7 @@
 
 .ask-question__inner {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
 
@@ -26,11 +27,16 @@
 
 .ask-question__inner .triangle-block {
   position: relative;
-  top: 7px;
-  left: calc(100vw - 2035px);
-  min-width: calc(100vw - 1290px);
+  top: 8px;
+  left: -116px;
+  min-width: 608px;
   min-height: 535px;
-  margin-right: -24px;
+
+  @media (max-width: 1289px) {
+    order: 2;
+    top: 30px;
+    left: 17px;
+  }
 
   @media (max-width: $max-tablet) {
     display: none;

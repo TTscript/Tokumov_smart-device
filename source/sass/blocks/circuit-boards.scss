@@ -9,7 +9,6 @@
   position: relative;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   min-height: 100%;
   background-image: url("../img/desktop/mainback.jpg");
   background-color: $main-block-background-color;
@@ -38,6 +37,7 @@
 
 .circuit-boards__text-block {
   z-index: 2;
+  transform: translateX(180px);
   margin: 0 24px 0 0;
   padding: 315px 0 0 20px;
 
@@ -187,6 +187,8 @@
 }
 
 .circuit-boards__picture-block {
+  transform: translateX(181px);
+  width: calc(1px + 100vw - 856px);
   z-index: 1;
   background-image: url("../img/desktop/main-triangle.svg");
   background-repeat: no-repeat;
@@ -194,19 +196,12 @@
   margin: 0;
   padding: 257px 0 0;
 
-  @media (max-width: 1561px) {
-    background-position: -12px -133px;
-  }
-
-  @media (max-width: 1561px) {
-    padding: 0;
-  }
-
   @media (max-width: $max-tablet) {
     background-image: url("../img/tablet/main-triangle.svg");
     background-position: -14px -1px;
     width: 100%;
     transform: none;
+    padding: 0;
   }
 
   @media (max-width: $max-mobile) {
@@ -217,11 +212,12 @@
 }
 
 .circuit-boards__picture-block-img {
+  overflow: hidden;
+
   @media (max-width: $max-tablet) {
     position: unset;
     padding-top: 113px;
     width: calc(100vw - 506px);
-    overflow: hidden;
     transform: translateX(51px);
   }
 
@@ -234,8 +230,9 @@
 }
 
 .circuit-boards__picture-block img {
+  max-width: unset;
+
   @media (max-width: $max-tablet) {
-    max-width: unset;
     width: 465px;
   }
 

@@ -178,6 +178,10 @@
 }
 
 .popup__shape-inner-checkbox input:checked + label {
+  &:hover {
+    opacity: .6;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -190,6 +194,12 @@
     height: 10px;
   }
 }
+
+input[id="popup-checkbox"]:focus + label {
+  outline: 2px solid $checkbox-popup-focus-border;
+  border-radius: 2px;
+}
+
 
 .popup__close-button {
   position: absolute;

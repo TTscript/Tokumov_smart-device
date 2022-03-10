@@ -6,35 +6,17 @@
   @media (max-width: 657px) {
     margin-bottom: 22px;
   }
+
+  @media (max-width: $max-mobile) {
+    transform: translateX(-18px);
+  }
 }
 
 .logo-block a {
-  margin: 0 16px 54px 0;
+  margin: 0 0 54px 0;
   padding: 0;
 
   @media (max-width: $max-tablet) {
-    margin-bottom: 0;
+    margin: 0;
   }
-}
-
-.logo-block__text-block {
-  margin: 0;
-  padding: 0;
-}
-
-.logo-block__text-block h3 {
-  @include roboto-condensed-bold();
-  color: $page-footer-logo-block-title-color;
-  margin: 0 0 3px 0;
-  padding: 5px 0 0 0;
-
-  @media (max-width: $max-tablet) {
-    margin-right: 35px;
-  }
-}
-
-.logo-block__text-block p {
-  @include roboto-medium();
-  margin: 0;
-  padding: 0;
 }
